@@ -12,7 +12,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
+    width: 76%;
     margin: 0 auto;
 }
 body{
@@ -21,7 +21,8 @@ body{
     flex-direction: column;
 }
 header{
-    background-color: rebeccapurple;
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
 .header-logo{
     font-size: 24px;
@@ -40,12 +41,12 @@ header{
 .hero-container{
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 40px;
 }
 .hero{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: baseline;
     gap: 10px;
 }
 .hero-main{
@@ -55,8 +56,8 @@ header{
 }
 
 .placeholder-image{
-    height: 5%;
-    aspect-ratio: 16 / 9;
+    max-width: 53%;
+    aspect-ratio: 16 / 7;
 }
 .sign-up-btn{
     background-color: #3882f6;
