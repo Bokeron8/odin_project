@@ -34,7 +34,7 @@ header{
     display: flex;
     gap: 20px;
 }
-.link a, .hero-sub, .call-to-action-description{
+.link a, .hero-sub, .call-to-action-description, .copyright-text{
     text-decoration: none;
     font-size: 18px;
     color:#E5E7Eb;
@@ -145,4 +145,14 @@ header{
 }
 .call-to-action button.sign-up-btn{
     border: solid 2px white;
+}
+footer{
+    padding: 30px 0;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.copyright-text{
+    text-align: center;
 }
