@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 ul{
     list-style: none;
@@ -72,14 +73,15 @@ header{
 }
 .second-part{
     background-color: white;
+    padding-top: 50px;
+    padding-bottom: 120px;
 }
 .random-info{
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 60%;
-    padding-top: 50px;
-    padding-bottom: 120px;
+    gap: 50px;
 }
 .info-header, .quote-author{
     font-size: 36px;
@@ -107,14 +109,13 @@ header{
 }
 .third-part{
     background-color: #E5E7Eb;
+    padding: 120px 0;
 }
 .inspiring-quote{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 60%;
-    padding-top: 50px;
-    padding-bottom: 120px;
 }
 .quote{
     font-size: 36px;
