@@ -25,7 +25,7 @@ header{
     padding-top: 20px;
     padding-bottom: 100px;
 }
-.header-logo{
+.header-logo, .call-to-action-title{
     font-size: 24px;
     color: #f9faf8;
     font-weight: bold;
@@ -34,7 +34,7 @@ header{
     display: flex;
     gap: 20px;
 }
-.link a, .hero-sub{
+.link a, .hero-sub, .call-to-action-description{
     text-decoration: none;
     font-size: 18px;
     color:#E5E7Eb;
@@ -125,4 +125,24 @@ header{
 }
 .quote-author{
     font-size: 24px;
+}
+
+.fourth-part{
+    background-color: white;
+    padding: 120px 0;
+}
+.call-to-action{
+    display: flex;
+    background-color: #3882f6;
+    padding: 55px 0;
+    border-radius: 8px;
+    justify-content: center;
+    gap: 15%;
+}
+.call-to-action-text{
+    display: flex;
+    flex-direction: column;
+}
+.call-to-action button.sign-up-btn{
+    border: solid 2px white;
 }
