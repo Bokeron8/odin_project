@@ -69,3 +69,22 @@ header{
     font-size: 16px;
     cursor: pointer;
 }
+.second-part{
+    background-color: white;
+}
+.random-info{
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card-img{
+    width: 100%;
+}
