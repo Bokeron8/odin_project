@@ -53,3 +53,11 @@ function playRound (playerSelection, computerSelection){
         return 'Thats not an option'
     }
 }
+function game(){
+    for (let i = 0; i<5; i++){
+        playerSelection = getPlayerChoice()
+        computerSelection = getComputerChoice()
+        console.log(playRound(playerSelection, computerSelection))
+    }
+}
+    
