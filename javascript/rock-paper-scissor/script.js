@@ -1,5 +1,20 @@
 
 const OPTIONS = ['rock', 'paper', 'scissor']
+
+//Get buttons element
+const rockBtn = document.getElementById('rock-btn');
+const paperBtn = document.getElementById('paper-btn');
+const scissorBtn = document.getElementById('scissor-btn');
+//Add events listener
+rockBtn.addEventListener('click', () => {
+    game('rock');
+  });
+paperBtn.addEventListener('click', () => {
+    game('paper');
+  });
+scissorBtn.addEventListener('click', () => {
+    game('scissor');
+  });
 //Function to get a random choice betwen 'Rock' 'Paper' and 'Scissor'
 function getComputerChoice (){ 
     //Generates a random number betwen 0,1, then it gets multiplied by the length of the OPTIONS list, then floor is aplied.
@@ -53,11 +68,8 @@ function playRound (playerSelection, computerSelection){
         return 'Thats not an option'
     }
 }
-function game(){
-    for (let i = 0; i<5; i++){
-        playerSelection = getPlayerChoice()
-        computerSelection = getComputerChoice()
-        console.log(playRound(playerSelection, computerSelection))
-    }
+function game(playerSelection){
+    let computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection))
 }
     
