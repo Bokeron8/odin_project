@@ -1,10 +1,15 @@
 
 const OPTIONS = ['rock', 'paper', 'scissor']
-
-//Get buttons element
+let playerScore = 0;
+let computerScore = 0;
+//Get buttons elements
 const rockBtn = document.getElementById('rock-btn');
 const paperBtn = document.getElementById('paper-btn');
 const scissorBtn = document.getElementById('scissor-btn');
+//Get header elements
+const playerScoreElement = document.getElementById('player-score');
+const resultElement = document.getElementById('result');
+const computerScoreElement = document.getElementById('computer-score');
 //Add events listener
 rockBtn.addEventListener('click', () => {
     game('rock');
@@ -24,52 +29,51 @@ function getComputerChoice (){
     //Returns the choice
     return computerChoice
 }
-//Ask player for his choice
-function getPlayerChoice(){
-    playerChoice = prompt("Choose: 'Rock', 'Paper', 'Scissor'")
-    return playerChoice
-}
+
 //Plays 1 round and then return a string declaring the winner of the round
 function playRound (playerSelection, computerSelection){
-    //Change player string so it can be in any case
-    playerSelection = playerSelection.toLowerCase()
     //Draw logic
     if (playerSelection == computerSelection){
-        return "You Draw!"
+        resultElement.textContent = "You Draw!"
     }
     //Player choose Rock logic
     else if (playerSelection == "rock"){
         if (computerSelection == "paper"){
-            return "You Lose! Paper beats Rock"
+            computerScore++;
+            resultElement.textContent = "You Lose! Paper beats Rock"
         }
         else{
-            return "You Win! Rock beats Scissor"
+            playerScore++;
+            resultElement.textContent = "You Win! Rock beats Scissor"
         }
     }
     //Player choose Paper logic
     else if (playerSelection == "paper"){
         if (computerSelection == "scissor"){
-            return "You Lose! Scissor beats Paper"
+            computerScore++;
+            resultElement.textContent = "You Lose! Scissor beats Paper"
         }
         else{
-            return "You Win! Paper beats Rock"
+            playerScore++;
+            resultElement.textContent = "You Win! Paper beats Rock"
         }
     }
     //Player choose Scissor logic
     else if (playerSelection == "scissor"){
         if (computerSelection == "rock"){
-            return "You Lose! Rock beats Scissor"
+            computerScore++;
+            resultElement.textContent = "You Lose! Rock beats Scissor"
         }
         else{
-            return "You Win! Scissor beats Paper"
+            playerScore++;
+            resultElement.textContent = "You Win! Scissor beats Paper"
         }
     }
-    else{
-        return 'Thats not an option'
-    }
+    computerScoreElement.textContent = computerScore;
+    playerScoreElement.textContent = playerScore;
 }
 function game(playerSelection){
     let computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection))
+    playRound(playerSelection, computerSelection)
 }
     
