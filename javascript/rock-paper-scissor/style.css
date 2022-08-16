@@ -1,0 +1,27 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    
+}
+.container{
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.rps-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.rps-buttons button{
+    padding: 20px 30px;
+}

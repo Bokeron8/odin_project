@@ -75,5 +75,15 @@ function playRound (playerSelection, computerSelection){
 function game(playerSelection){
     let computerSelection = getComputerChoice();
     playRound(playerSelection, computerSelection)
+    if (playerScore == 5){
+        alert('YOU WIN')
+        playerScore = 0;
+        computerScore = 0;
+    }
+    else if (computerScore == 5){
+        alert('YOU LOSS')
+        playerScore = 0;
+        computerScore = 0;
+    }
 }
     
