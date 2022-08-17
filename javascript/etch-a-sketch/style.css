@@ -1,0 +1,30 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(209, 161, 169);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.grid-container{
+    display: grid;
+    background-color: #2196F3;
+    grid-template-rows: repeat(var(--grid-rows), auto);
+    grid-template-columns: repeat(var(--grid-cols), auto);
+    width: 600px;
+    height: 600px;
+}
+.block{
+    background-color: black;
+    border: 1px solid rgb(100, 100, 100);
+}
