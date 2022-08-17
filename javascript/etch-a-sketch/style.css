@@ -15,16 +15,21 @@ body{
     justify-content: center;
     height: 100vh;
     align-items: center;
+    flex-direction: column;
+    gap: 12px;
 }
 .grid-container{
     display: grid;
-    background-color: #2196F3;
+    background-color: #ffffff;
     grid-template-rows: repeat(var(--grid-rows), auto);
     grid-template-columns: repeat(var(--grid-cols), auto);
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
+    border: 12px rgb(202, 112, 27) solid;
+    border-radius: 6px;
 }
 .block{
-    background-color: black;
+    background-color: rgb(253, 224, 224);
+    opacity: 0.1;
     border: 1px solid rgb(100, 100, 100);
 }
