@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: rgb(235, 235, 235);
 }
 body{
     display: flex;
@@ -21,12 +22,14 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
-    color: rgb(235, 235, 235);
     height: 120px;
-    background-color: rgb(118, 138, 87);
+    background-color: rgb(89, 107, 61);
     border-radius: 20px;
     margin-bottom: 20px;
 }
+h1{
+    font-size: 90px;
+ }
 .btn-grid{
     gap: 10px;
     display: grid;
@@ -40,11 +43,17 @@ body{
 .row button{
     padding: 20px;
     width: 100%;
-    font-size: 18px;
+    font-size: 28px;
+    background-color: rgb(70, 70, 70);
+}
+.first.row button{
+    background-color: rgb(209, 147, 30);
 }
 .fifth.row{
     grid-template-columns: 215px 1fr 1fr;
 }
-h1{
-   font-size: 90px;
+
+.row button.operation{
+    background-color: rgb(24, 24, 24);
 }
+
