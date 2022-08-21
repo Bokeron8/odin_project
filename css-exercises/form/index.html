@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <script src="script.js" defer></script>
+    <title>Form Project</title>
+</head>
+<body>
+    <div class="left container">
+        <div class="title">
+            <img src="logo.png" alt="" class="logo">
+            <h1 class="org-name">ODIN</h1>
+        </div>
+        <footer>
+            <p>Photo by Someone</p>
+        </footer>
+    </div>
+    <div class="main container">
+        <div class="top-text">
+            <div>
+                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
+            </div>
+            <div>
+                <h3>You <em>know</em> you want to.</h3>
+            </div>
+        </div>
+        <form action="http://httpbin.org/post" method="post">
+            <fieldset class="register-form">
+                <legend>Let's do this!</legend>
+                <div class="col one">
+                    <div class="fi">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="fi">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="fi">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>        
+                        <span class="error"></span>
+                    </div>
+                </div>
+               <div class="col two">          
+                   <div class="fi">
+                       <label for="last-name">Last Name</label>
+                       <input type="text" name="last-name" id="last-name">
+                   </div>
+                   <div class="fi">
+                       <label for="phone-number">Phone Number</label>
+                       <input type="tel" name="phone-number" id="phone-number">
+                   </div>
+                   <div class="fi">
+                       <label for="confirm-password">Confirm Password</label>
+                       <input type="password" name="confirm-password" id="confirm-password" required>
+                   </div>
+               </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+       </form>
+       <h4>Already have an account? <a href="#">Log in</a></h4>
+    </div>
+</body>
+</html>
