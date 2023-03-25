@@ -8,6 +8,12 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-rows: 12.5% 12.5% auto 12.5%;
+  grid-template-columns: 25% auto;
+  gap: 15px;
 }
 
 .container div {
@@ -17,6 +23,7 @@ body, html {
   font-weight: bold;
   color: white;
   border-radius: 15px;
+
 }
 
 .header {
